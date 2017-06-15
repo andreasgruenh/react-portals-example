@@ -1,0 +1,72 @@
+.modal {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.modal-backdrop {
+  background-color: black;
+  cursor: pointer;
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-dialog {
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.modal-transition-enter {
+  opacity: 0;
+}
+
+.modal-transition-enter .modal-dialog {
+  transform: translate3d(0, 50vh, 0);
+}
+
+.modal-transition-enter-active {
+  opacity: 1;
+}
+
+.modal-transition-enter-active .modal-dialog {
+  transform: translate3d(0, 0, 0);
+}
+
+.modal-transition-leave-active,
+.modal-transition-enter-active {
+  transition: opacity .5s ease;
+}
+
+.modal-transition-leave-active .modal-dialog,
+.modal-transition-enter-active .modal-dialog {
+  transition: transform .5s ease;
+}
+
+.modal-transition-leave {
+  opacity: 1;
+}
+
+.modal-transition-leave .modal-dialog {
+  transform: translate3d(0, 0vh, 0);
+}
+
+.modal-transition-leave-active {
+  opacity: 0;
+}
+
+.modal-transition-leave-active .modal-dialog {
+  transform: translate3d(0, 50vh, 0);
+}
