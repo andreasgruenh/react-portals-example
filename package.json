@@ -9,7 +9,7 @@
     "react-transition-group": "^1.2.0",
     "recompose": "^0.23.5"
   },
-  "homepage": "http://myname.github.io/myapp",
+  "homepage": "https://andreasgruenh.github.io/react-portals-example",
   "devDependencies": {
     "react-scripts": "1.0.7"
   },
